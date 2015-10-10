@@ -130,7 +130,7 @@ class TabBarViewController: UIViewController{
         self.imageView.image = self.animatedImage
         
         
-        delay(2.5 , closure: { () ->
+        delay(2 , closure: { () ->
             () in
             
             self.contentView.alpha = 1

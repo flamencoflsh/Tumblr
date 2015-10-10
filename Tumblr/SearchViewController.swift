@@ -51,7 +51,7 @@ class SearchViewController: UIViewController {
         self.imageView.image = self.animatedImage
         
         
-        delay(2, closure: { () ->
+        delay(1.5, closure: { () ->
             () in
             
             self.scrollView.alpha = 1

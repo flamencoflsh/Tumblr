@@ -358,10 +358,10 @@
             </objects>
             <point key="canvasLocation" x="948" y="1083"/>
         </scene>
-        <!--View Controller-->
+        <!--Settings View Controller-->
         <scene sceneID="nsO-O0-ThD">
             <objects>
-                <viewController id="rHx-RY-yDm" sceneMemberID="viewController">
+                <viewController id="rHx-RY-yDm" customClass="SettingsViewController" customModule="Tumblr" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6AL-e9-BeF">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -374,7 +374,14 @@
                                 <rect key="frame" x="20" y="475" width="291" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
-                                    <segue destination="tio-ir-CjD" kind="modal" animates="NO" id="8Ys-fB-8UG"/>
+                                    <action selector="didPressLogout:" destination="rHx-RY-yDm" eventType="touchUpInside" id="Q89-zE-K5C"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="dyD-LS-ZeP">
+                                <rect key="frame" x="262" y="530" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="tio-ir-CjD" kind="modal" identifier="logoutSegue" animates="NO" id="lrM-w3-pAW"/>
                                 </connections>
                             </button>
                         </subviews>

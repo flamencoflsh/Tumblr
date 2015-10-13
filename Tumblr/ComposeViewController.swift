@@ -75,18 +75,25 @@ class ComposeViewController: UIViewController, UIViewControllerTransitioningDele
             toViewController.view.alpha = 1
             self.backgroundView.alpha = 0.95
             
-            UIView.animateWithDuration(0.1, animations: { () -> Void in
-                 self.redButton.transform = CGAffineTransformMakeTranslation(0, -410)
-            })
+//            UIView.animateWithDuration(0.1, animations: { () -> Void in
+//                 self.redButton.transform = CGAffineTransformMakeTranslation(0, -410)
+//            })
+            
+            UIView.animateWithDuration(0.5, delay: 0, usingSpringWithDamping: 0.73, initialSpringVelocity: 4.0, options: [], animations: { () -> Void in
+                self.redButton.transform = CGAffineTransformMakeTranslation(0, -410)
+                }, completion: nil)
+
             
             delay(0.1, closure: { () ->
             () in
           
-            UIView.animateWithDuration(0.2, animations: { () -> Void in
-                self.whiteButton.transform = CGAffineTransformMakeTranslation(0, -410)
-            })
+//            UIView.animateWithDuration(0.2, animations: { () -> Void in
+//                self.whiteButton.transform = CGAffineTransformMakeTranslation(0, -410)
+//            })
             
-
+                UIView.animateWithDuration(0.5, delay: 0, usingSpringWithDamping: 0.73, initialSpringVelocity: 4.0, options: [], animations: { () -> Void in
+                    self.whiteButton.transform = CGAffineTransformMakeTranslation(0, -410)
+                    }, completion: nil)
                 
             
             })
@@ -94,68 +101,122 @@ class ComposeViewController: UIViewController, UIViewControllerTransitioningDele
             delay(0.2, closure: { () ->
                 () in
                 
-                UIView.animateWithDuration(0.2, animations: { () -> Void in
+//                UIView.animateWithDuration(0.2, animations: { () -> Void in
+//                    self.blueButton.transform = CGAffineTransformMakeTranslation(0, -410)
+//                    self.yellowButton.transform = CGAffineTransformMakeTranslation(0, -410)
+//                })
+                
+                UIView.animateWithDuration(0.5, delay: 0, usingSpringWithDamping: 0.73, initialSpringVelocity: 4.0, options: [], animations: { () -> Void in
                     self.blueButton.transform = CGAffineTransformMakeTranslation(0, -410)
                     self.yellowButton.transform = CGAffineTransformMakeTranslation(0, -410)
-                })})
+                    }, completion: nil)
+            
+            })
         
             delay(0.3, closure: { () ->
                 () in
                 
-                UIView.animateWithDuration(0.2, animations: { () -> Void in
+//                UIView.animateWithDuration(0.2, animations: { () -> Void in
+//                    self.greenButton.transform = CGAffineTransformMakeTranslation(0, -410)
+//                    self.grayButton.transform = CGAffineTransformMakeTranslation(0, -410)
+//                })
+                
+                UIView.animateWithDuration(0.5, delay: 0, usingSpringWithDamping: 0.73, initialSpringVelocity: 4.0, options: [], animations: { () -> Void in
                     self.greenButton.transform = CGAffineTransformMakeTranslation(0, -410)
                     self.grayButton.transform = CGAffineTransformMakeTranslation(0, -410)
-                })})
+                    }, completion: nil)
+            
+            })
         
             delay(0.4, closure: { () ->
                 () in
                 
-                UIView.animateWithDuration(0.2, animations: { () -> Void in
+//                UIView.animateWithDuration(0.2, animations: { () -> Void in
+//                    self.nevermindLabel.transform = CGAffineTransformMakeTranslation(0, -40)
+//                })
+                
+                UIView.animateWithDuration(0.5, delay: 0, usingSpringWithDamping: 0.73, initialSpringVelocity: 4.0, options: [], animations: { () -> Void in
                     self.nevermindLabel.transform = CGAffineTransformMakeTranslation(0, -40)
-                })})
+                    }, completion: nil)
+            
+            })
             transitionContext.completeTransition(true)
         } else {
             
-            UIView.animateWithDuration(0.1, animations: { () -> Void in
-                self.nevermindLabel.transform = CGAffineTransformMakeTranslation(0, 40)
-            })
+//            UIView.animateWithDuration(0.1, animations: { () -> Void in
+//                self.nevermindLabel.transform = CGAffineTransformMakeTranslation(0, 40)
+//            })
+            
+            UIView.animateWithDuration(0.5, delay: 0, usingSpringWithDamping: 0.73, initialSpringVelocity: 4.0, options: [], animations: { () -> Void in
+                 self.nevermindLabel.transform = CGAffineTransformMakeTranslation(0, 40)
+                }, completion: nil)
             
             delay(0.1, closure: { () ->
                 () in
                 
-                UIView.animateWithDuration(0.2, animations: { () -> Void in
-                    self.greenButton.transform = CGAffineTransformMakeTranslation(0, 410)
-                    self.grayButton.transform = CGAffineTransformMakeTranslation(0, 410)
-                })})
+//                UIView.animateWithDuration(0.2, animations: { () -> Void in
+//                    self.greenButton.transform = CGAffineTransformMakeTranslation(0, 410)
+//                    self.grayButton.transform = CGAffineTransformMakeTranslation(0, 410)
+//                })
+            
+            UIView.animateWithDuration(0.5, delay: 0, usingSpringWithDamping: 0.73, initialSpringVelocity: 4.0, options: [], animations: { () -> Void in
+                self.greenButton.transform = CGAffineTransformMakeTranslation(0, 410)
+                self.grayButton.transform = CGAffineTransformMakeTranslation(0, 410)
+                    }, completion: nil)
+            })
             
             delay(0.2, closure: { () ->
                 () in
                 
-                UIView.animateWithDuration(0.2, animations: { () -> Void in
+//                UIView.animateWithDuration(0.2, animations: { () -> Void in
+//                    self.blueButton.transform = CGAffineTransformMakeTranslation(0, 410)
+//                    self.yellowButton.transform = CGAffineTransformMakeTranslation(0, 410)
+//                })
+            
+                UIView.animateWithDuration(0.5, delay: 0, usingSpringWithDamping: 0.73, initialSpringVelocity: 4.0, options: [], animations: { () -> Void in
                     self.blueButton.transform = CGAffineTransformMakeTranslation(0, 410)
                     self.yellowButton.transform = CGAffineTransformMakeTranslation(0, 410)
-                })})
+                    }, completion: nil)
+            })
+                
+            
             
             delay(0.3, closure: { () ->
                 () in
                 
-                UIView.animateWithDuration(0.2, animations: { () -> Void in
-                    self.whiteButton.transform = CGAffineTransformMakeTranslation(0, 410)
-                })})
+//                UIView.animateWithDuration(0.2, animations: { () -> Void in
+//                    self.whiteButton.transform = CGAffineTransformMakeTranslation(0, 410)
+//                })
+        
+                UIView.animateWithDuration(0.5, delay: 0, usingSpringWithDamping: 0.73, initialSpringVelocity: 4.0, options: [], animations: { () -> Void in
+         self.whiteButton.transform = CGAffineTransformMakeTranslation(0, 410)
+        }, completion: nil)
+        
+        
+        })
             
             delay(0.4, closure: { () ->
                 () in
                 
-                UIView.animateWithDuration(0.2, animations: { () -> Void in
-                    self.redButton.transform = CGAffineTransformMakeTranslation(0, 410)
-                })})
+//                UIView.animateWithDuration(0.2, animations: { () -> Void in
+//                    self.redButton.transform = CGAffineTransformMakeTranslation(0, 410)
+//                })
+                
+                UIView.animateWithDuration(0.5, delay: 0, usingSpringWithDamping: 0.73, initialSpringVelocity: 4.0, options: [], animations: { () -> Void in
+                     self.redButton.transform = CGAffineTransformMakeTranslation(0, 410)
+                    }, completion: nil)
+            
+            })
 
             delay(0.5, closure: { () ->
                 () in
                 
                 UIView.animateWithDuration(0.2, animations: { () -> Void in
                     fromViewController.view.alpha = 0
-                })})
+                })
+            
+                
+            })
             
             delay(0.6, closure: { () ->
                 () in
